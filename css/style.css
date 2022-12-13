@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&display=swap');
+
+/* General */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Lora', serif;
+}
+a{
+    text-decoration: none;
+}
+:root{
+    --color1: #05b1b1;
+    --color2: #52339a;
+}
+.color1{
+    color: #05b1b1;
+}
+.color2{
+    color: #52339a;
+}
+.bg1{
+    background-color: var(--color1);
+}
+.bg2{
+    background-color: var(--color2);
+}
+.container{
+    max-width: 960px;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+}
+.menu{
+    list-style: none;
+    display: flex;
+}
+.menu a{
+    margin-right: 20px;
+    font-size: 24px;
+}
+.project a{
+    font-size: 24px;
+}
+.project a:hover{
+    color: var(--color2);
+    transition: all .3s ease;
+}
+.menu a:hover{
+    color:var(--color2);
+    transition: all .3s ease;
+}
+section{
+    margin: 30px 0;
+}
+.section-title{
+    text-align: center;
+    font-size: 30px;
+}
+
+/* Header */
+header{
+    padding: 30px 0;
+}
+.nav .project{
+    flex: 0 1 30%;
+}
+.nav .menu{
+    flex: 1 1;
+    justify-content: flex-end;
+    
+}
+
+/* Intro */
+.intro{
+    min-height: 400px;
+    background: url("../img/jumbotron.jpg") top / cover no-repeat;
+    padding: 70px 0 30px;
+}
+.intro-title{
+    text-align: center;
+    color: var(--color2);
+    margin-bottom: 50px;
+}
+.btn-intro{
+    
+    text-align: center;
+}
+.btn-intro{
+    margin-top: 80px;
+}
+
+.btn-intro a{
+    background-color: var(--color1);
+    color: var(--color2);
+    font-size: 18px;
+    font-weight: 700;
+    padding: 20px 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px var(--color1);
+    transition: all .3s ease;
+}
+.btn-intro a:hover{
+    background-color: var(--color2);
+    color: var(--color1);
+    box-shadow: 5px 5px 10px var(--color2);
+    transition: all .3s ease;
+}
+
+/* Services */
+.col-service{
+    margin: 30px 0;
+    flex: 0 1 33.33334%;
+}
+.icon{
+    text-align: center;
+}
+.service-descr{
+    margin-top: 20px;
+    color: var(--color2);
+}
+/* Blog */
+.post{
+    display: flex;
+    margin: 30px 0;
+}
+.post-body{
+    color: var(--color2);
+    padding-left: 30px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+}
+
+/* Footer */
+footer{
+    background-color: #38404b;
+    text-align: center;
+    padding: 20px 0;
+}
+footer .menu{
+    justify-content: center;
+    padding: 10px 0;
+}
+footer p{
+    color: white;
+}
